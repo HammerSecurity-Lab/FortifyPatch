@@ -1,0 +1,1 @@
+make CROSS_COMPILE=../../scripts/third-parties/cross-compile/gcc-arm-10.3-2021.07-x86_64-aarch64-none-elf/bin/aarch64-none-elf- PLAT=fvp ENABLE_RME=1 CTX_INCLUDE_MTE_REGS=1 FVP_HW_CONFIG_DTS=fdts/fvp-base-gicv3-psci-1t.dts DEBUG=1 LOG_LEVEL=40 ARCH=aarch64 ARM_DISABLE_TRUSTED_WDOG=1 BL33=../arm-reference-platforms/output/fvp/components/fvp/uboot.bin all fip -j8
